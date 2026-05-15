@@ -2,10 +2,10 @@ export type TimelineDayHour = {
     datetime: string,
     temp: number,
     humidity: number,
-    dew: number,
+    dew?: number,
     windspeed: number,
     pressure: number,
-    cloudcover: number,
+    cloudcover?: number,
     conditions: string,
     icon: string,
 };
@@ -24,8 +24,8 @@ export type TimelineDay = {
     sunset: string,
     conditions: string,
     icon: string,
-    stations: string[],
-    hours: TimelineDayHour[],
+    stations?: string[],
+    hours?: TimelineDayHour[],
 };
 
 export type TimelineStation = {
